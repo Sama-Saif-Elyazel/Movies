@@ -6,19 +6,15 @@ import TVs from './Tvs'
 
 export default function Home() {
     return (
-        <>
-            <div>
-                <div className='h-screen'>
-                    <Navbar />
-                    <Hero />
-                </div>
-                <div className='h-screen'>
-                    <Tmovies />
-                </div>
-                <div className='h-screen'>
-                    <TVs />
-                </div>
+        <div className='bg-gray-900 min-h-screen text-white'>
+            <Navbar />
+            <Hero />
+            <div className='min-h-screen py-8'>
+                <Tmovies />
             </div>
-        </>
+            <div className='min-h-screen py-8'>
+                <TVs />
+            </div>
+        </div>
     )
 }
